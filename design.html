@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hwk7bsw.css">
+    <title>Art Direction - Gaby's Portfolio</title>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="index.html"><img src="images/logo.svg" width="80px" class="navbar-logo"></a>
+          <button class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+              <li><a href="Art.html">Art Direction</a></li>
+              <li><a href="design.html">Graphic Design</a></li>
+              <li><a href="photo.html">Photography</a></li>
+              <li><a href="about.html">About Me</a></li>
+            </ul>
+        </div>
+      </nav>
+  </header>
+</head>
+<body>
+  <h1 class="weekly-headline">GRAPHIC DESIGN</h1>
+  <h2>Here you'll find my design work from professional to undergraduate. Click on each image to view more.</h2>
+  <div id="myBtnContainer" class="design-button">
+    <button class="btn active" onclick="filterSelection('all')">Show All</button>
+    <button class="btn" onclick="filterSelection('bleacherreport')"> Bleacher Report</button>
+    <button class="btn" onclick="filterSelection('umiami')"> University of Miami</button>
+    <button class="btn" onclick="filterSelection('freelance')"> Just for fun</button>
+  </div>
+<div class="design-container">
+  <div class="filterDiv bleacherreport">
+    <a href="one off.html" class="design-card">
+      <img src="images/flagg.png" alt="Vday Design" width="288px" class="design-icon">
+      <p class="design-label">One off designs</p>
+    </a>
+  </div>
+    <div class="filterDiv bleacherreport">
+    <a href="Juice brief.html" class="design-card">
+      <img src="images/seth.png" alt="Juice Brief" width="288px" class="design-icon">
+      <p class="design-label">Real Time designs</p>
+    </a>
+  </div>
+  <div class="filterDiv umiami">
+    <a href="Cinna brief.html" class="design-card">
+      <img src="images/hrl_cover.png" alt="Cinna Brief" width="288px" class="design-icon">
+      <p class="design-label">Student Affairs-HRL</p>
+    </a>
+  </div>
+  <div class="filterDiv umiami">
+    <a href="Cinna brief.html" class="design-card">
+      <img src="images/hrl_cover.png" alt="Cinna Brief" width="288px" class="design-icon">
+      <p class="design-label">Student Affairs-Centennial Celebration</p>
+    </a>
+  </div>
+  <div class="filterDiv umiami">
+    <a href="Cinna brief.html" class="design-card">
+      <img src="images/hrl_cover.png" alt="Cinna Brief" width="288px" class="design-icon">
+      <p class="design-label">Student Affairs-Homecoming Concert</p>
+    </a>
+  </div>
+    <div class="filterDiv freelance">
+    <a href="streets brief.html" class="design-card">
+      <img src="images/sam quote.png" alt="freelance" width="288px" class="design-icon">
+      <p class="design-label">Sports Milestones</p>
+    </a>
+  </div>
+</div>
+    <div class="footer">
+      <p>gaby | 2025</p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

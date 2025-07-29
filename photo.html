@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hwk7bsw.css">
+    <title>Art Direction - Gaby's Portfolio</title>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="index.html"><img src="images/logo.svg" width="80px" class="navbar-logo"></a>
+          <button class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+              <li><a href="Art.html">Art Direction</a></li>
+              <li><a href="design.html">Graphic Design</a></li>
+              <li><a href="photo.html">Photography</a></li>
+              <li><a href="about.html">About Me</a></li>
+            </ul>
+        </div>
+      </nav>
+  </header>
+</head>
+<body>
+  <h1 class="weekly-headline">PHOTOGRAPHY</h1>
+  <h2>Here you'll find my photography work. I have freelanced, worked for major companies and have done some pretty fun projects.</h2>
+  <div id="myBtnContainer" class="design-button">
+    <button class="btn active" onclick="filterSelection('all')">Show All</button>
+    <button class="btn" onclick="filterSelection('food')"> Food</button>
+    <button class="btn" onclick="filterSelection('lifestyle')"> Lifestyle</button>
+    <button class="btn" onclick="filterSelection('studentlife')"> Student life</button>
+    <button class="btn" onclick="filterSelection('concerts')"> Concerts</button>
+  </div>
+<div class="design-container">
+  <div class="filterDiv food">
+    <a href="" class="design-card">
+      <img src="images/cinna.jpg" alt="Vday Design" width="288px" class="design-icon">
+      <p class="design-label">Disney Food & Beverage</p>
+    </a>
+  </div>
+    <div class="filterDiv lifestyle">
+    <a href="" class="design-card">
+      <img src="images/griffin -2754.jpg" alt="Juice Brief" width="288px" class="design-icon">
+      <p class="design-label">Graduation</p>
+    </a>
+  </div>
+  <div class="filterDiv lifestyle">
+        <a href="Juice brief.html" class="design-card">
+        <img src="images/steph and tony-3550.jpg" alt="Juice Brief" width="288px" class="design-icon">
+        <p class="design-label">Engagement</p>
+        </a>
+  </div>
+    <div class="filterDiv lifestyle">
+        <a href="Juice brief.html" class="design-card">
+        <img src="images/Diana Alba Lozano-4149.jpg" alt="Juice Brief" width="288px" class="design-icon">
+        <p class="design-label">Editorial</p>
+        </a>
+    </div>
+    <div class="filterDiv studentlife">
+        <a href="Juice brief.html" class="design-card">
+        <img src="images/Homecoming Week 2024—Spirit Tree- Torna-8018 copy.jpg" alt="Juice Brief" width="340px" height="430px" class="design-icon">
+        <p class="design-label">Student Life</p>
+        </a>
+    </div>
+</div>
+    <div class="footer">
+      <p>gaby | 2025</p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
