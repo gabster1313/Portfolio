@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hwk7bsw.css">
+    <title>HRL - Gaby's Portfolio</title>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="index.html"><img src="../images/logo.svg" aria-label="Homepage logo button" alt="logo" width="80px" class="navbar-logo"></a>
+          <button Aria-label="Navigation Menu" class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+              <li><a href="../Art.html">Art Direction</a></li>
+              <li><a href="../design.html">Graphic Design</a></li>
+              <li><a href="../photo.html">Photography</a></li>
+              <li><a href="../about.html">About Me</a></li>
+            </ul>
+        </div>
+      </nav>
+  </header>
+</head>
+<body>
+  <h1>Housing and Residential Life</h1>
+  <h2>For the incoming first-year students, HRL wanted to create a sense of belonging between the residential colleges. With that we came up with residential icons for each first-year residential college, merch with those designs, and our first-annual First-Year Cup.</h2>
+  <h3> Click the tabs below to enlarge photos.</h3>
+   <!-- The grid: four columns -->
+    <div class="row">
+    <div class="column">
+        <img src="../images/Icon pics/ibis.png" alt="Ibis Residential" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="../images/Icon pics/coral.png" alt="Coral Residential" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="../images/Icon pics/eaton.png" alt="Eaton Residential" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="../images/Icon pics/mp.png" alt="Mahoney Pearson" onclick="myFunction(this);">
+    </div>
+    </div>
+    <!-- The expanding image container -->
+    <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+
+    <!-- Image text -->
+    <div id="imgtext"></div>
+    </div>
+<h2>Residential College Icons, merchandise and environmental graphics were created to drive the point home.</h2>
+    <div class="row">
+    <div class="column">
+        <img src="../images/Icon pics/ibis.png" alt="Ibis Residential" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="../images/Icon pics/coral.png" alt="Coral Residential" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="../images/Icon pics/eaton.png" alt="Eaton Residential" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="../images/Icon pics/mp.png" alt="Mahoney Pearson" onclick="myFunction(this);">
+    </div>
+    </div>
+    <!-- The expanding image container -->
+    <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+
+    <!-- Image text -->
+    <div id="imgtext"></div>
+    </div>
+    <h2>First-Year Cup Inaugural Year. We went with a camp theme to get students excited to participate.</h2>
+    <div class="scroll-gallery-wrapper">
+        <button class="scroll-btn left" onclick="scrollGallery(-1)">&#8249;</button>
+        <div class="gallery-container" id="gallery">
+            <div class="gallery-items">
+                <img src="../images/hrl_cover.png" alt="Intro to the cup" class="gallery-item" />
+                <div class="text-block">
+                    <h4>Annoucement graphic</h4>
+                    <p>Explain graphic here</p>
+                </div>
+            </div>
+            <div class="gallery-items">
+                <img src="../images/first-year cup/leader.png" alt="Cam Ward" class="gallery-item"/>
+                <div class="text-block">
+                    <h4>Leaderboard</h4>
+                    <p>Explain graphic here </p>
+                </div>
+            </div>
+            <div class="gallery-items">
+                <img src="../images/first-year cup/event.png" alt="Cam Ward" class="gallery-item" width="1080px"/>
+                <div class="text-block">
+                    <h4>Monthly Event</h4>
+                    <p>Explain graphic here</p>
+                </div>
+            </div>
+    </div>
+    <button class="scroll-btn right" onclick="scrollGallery(1)">&#8250;</button>
+    </div>
+    <div class="item-nav">
+    <a href="../Designs/real time.html" class="nav-btn-prev">Previous</a>
+    <a href="../design.html" class="nav-btn-back">Back to All</a>        
+    <a href="../Designs/centennial.html" class="nav-btn-next">Next</a>                
+</div>
+        <div class="footer">
+      <p>Footer</p>
+    </div>
+
+</body>
+<script src="../script.js"></script>
+</html>

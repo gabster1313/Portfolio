@@ -129,9 +129,22 @@ h1{
 
 h2{
   font-size: 2rem;
-  line-height: 1px;
+  padding: 45px;
+  padding-bottom: 5px;
+  line-height: 50px;
   text-align: center;
   color: #9E8DBE;
+  font-family: "neulis-neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3{
+  font-size: 1.5rem;
+  padding: 15px;
+  line-height: 10px;
+  text-align: center;
+  color: #1c574e;
   font-family: "neulis-neue", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -164,10 +177,11 @@ h2{
 
 .about-container{
   display: grid;
-  grid-template-columns: 920px 500px 230px 250px;
+  grid-template-columns: 990px 900px 30px 50px;
   grid-template-rows: 950px 300px 350px;
-  padding: auto;
-  margin-left: 300px;
+  gap: 70px;
+  padding-left: 200px;
+
 }
 
 .motel{
@@ -176,7 +190,8 @@ h2{
 }
 
 .gallery-wall {
-  grid-column: 3;
+  margin: auto;
+  grid-column: 2;
   grid-row: 1;
   width: 170px;
   padding: 200px;
@@ -184,6 +199,7 @@ h2{
   align-items: center;
   height: 1500px;
   overflow-y: auto;
+  padding-left: 400px;
 }
 
 .frame img {
@@ -196,11 +212,10 @@ h2{
   font-weight: 100;
   font-style: normal;
   color: #89b698;
-  grid-row: 2;
-  padding-top: 20px;
-  grid-column: 1/span 2;
   font-size: 2rem;
-  text-align: center;
+  grid-column: 1;
+  grid-row: 2;
+  padding-left: 560px;
 }
 
 a{
@@ -293,18 +308,18 @@ a{
   font-style: normal;
   line-height: 40px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
   position: absolute;
   bottom: 10px;
   left: 0;
   right: -1;
-  padding-top: 5px;
-  padding-bottom: 0;
-  padding-left: 5px;
-  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   background-color: #99d2c6;
   color: #1c574e;
-  text-align: center;
+  text-align: left;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -329,6 +344,161 @@ div.scroll-container img {
   padding: 10px;
 }
 
+.scroll-gallery-wrapper {
+  position: relative;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  max-width: 2000px;
+  overflow: scroll;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 50px;
+  overflow-x: auto;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.gallery-item {
+  width: 900px;
+  height: 950px;
+  object-fit:contain;
+}
+
+.scroll-btn {
+  position:relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 80px;
+  padding: 15px;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  color: #1c574e;
+}
+
+.scroll-btn:hover {
+  color: #fff;
+}
+
+.scroll-btn.left {
+  left: 12px;
+}
+
+.scroll-btn.right {
+  right: 12px;
+}
+
+.gallery-items{
+  position: relative;
+}
+
+.gallery-item{
+  height: 1080px;
+}
+
+.text-block {
+  position:sticky;
+  bottom: 20px;
+  right: 20px;
+  color: #1c574e;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 300px;
+  padding-top: 30px;
+  gap: 1.5rem;
+}
+
+.nav-btn-prev{
+  background-color: #eb9922;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.nav-btn-next{
+  background-color: #eb9922;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.nav-btn-back{
+  background-color: #eb9922;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.column {
+  float:left;
+  margin: auto;
+  width: 15%;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+  padding: 5px;
+  padding-bottom: 20px;
+  width: 400px;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+  width: 2000px;
+  margin: auto;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  opacity: 0;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
 
 /* Nav Bar Responsive */
 @media (max-width: 880px) {
@@ -382,17 +552,18 @@ div.scroll-container img {
 
 }
 
-@media (max-width: 430px) {
+@media (max-width: 600px) {
   .home-key {
-    display: grid;
+    display:flex;
+    flex-wrap: wrap;
     margin: auto;
     padding-top: 90px;
-
   }
   .navbar-logo {
     width: 90px;
     padding-top: 40px;
   }
+  
   .key{
     width: 300px;
   }
@@ -400,9 +571,9 @@ div.scroll-container img {
   .about-container{
     display: grid;
     margin: auto;
-    grid-template-columns: 0px 100px 200px 0px;
+    grid-template-columns: 0px 170px 170px 0px;
     grid-template-rows: 300px 200px 100px 10px;
-    gap: 15px;
+    gap: 3px;
     padding: 0;
   }
   .motel{
@@ -414,6 +585,7 @@ div.scroll-container img {
     font-size: 3rem;
     text-align: center;
     padding-left: 0;
+    line-height: 50px;
   }
   h2{
     margin: auto;
@@ -434,9 +606,16 @@ div.scroll-container img {
   }
 
   .design-icon{
-    width: 400px;
+    width: 300px;
     margin: auto;
 
+  }
+
+  .design-label {
+    opacity: 100%;
+    padding-top: 5px;
+    line-height: 20px;
+    font-size: 0.7rem;
   }
   
   .design-button{
@@ -447,11 +626,11 @@ div.scroll-container img {
     gap: 7px;
   }
 
-.btn{
-  padding: 5px 5px 5px 5px;
-  font-size: 1rem;
-  line-height: 1rem;
-}
+  .btn{
+    padding: 5px 5px 5px 5px;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 
   .gallery-wall {
     position: sticky;
@@ -464,21 +643,110 @@ div.scroll-container img {
     grid-row: 2  / span 2;
     overflow: scroll;
   }
+  
   .resume{
-    padding-top: 250px;
-    padding-right: 100px;
-    grid-column: 3;
+    grid-column: 2/span 2;
     font-size: .5rem;
     grid-row: 1;
+    padding-top: 230px;
+    padding-left: 130px;
   }
 
   .Art-direct{
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
   }
 
   .art-cover{
     width: 350px;
   }
+
+  .gallery-container {
+    display: inline;
+    gap: 5px;
+    padding-left: 45px;
+  }
+
+  .gallery-item {
+    width: 300px;
+    height: 400px;
+  }
+
+  .scroll-btn {
+    opacity: 0%;
+  }
+
+  .gallery-items{
+    position: relative;
+    margin: auto;
+}
+
+  .gallery-item{
+    height: 400px;
+    width: 300px;
+}
+
+  .text-block {
+    position:sticky;
+    bottom: 20px;
+    right: 20px;
+    color: #1c574e;
+    font-size: .8rem;
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 20px;
+}
+
+  .column {
+    float:inline-start;
+    padding-right: 80px;
+    margin:auto;
+    width: 7%;
+  }
+
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+    padding-bottom: 20px;
+    width: 110px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: inline;
+    width: 500px;
+    margin: auto;
+  }
+
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    opacity: 0;
+    font-size: 20px;
+  }
+
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+  }
+}
 
 @media (max-width: 932px) {
   .home-key {
@@ -486,5 +754,4 @@ div.scroll-container img {
     padding-left: 50px;
     top: 10%;
   }
-}
 }

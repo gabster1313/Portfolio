@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hwk7bsw.css">
+    <title>One Off - Gaby's Portfolio</title>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="index.html"><img src="../images/logo.svg" aria-label="Homepage logo button" alt="logo" width="80px" class="navbar-logo"></a>
+          <button Aria-label="Navigation Menu" class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+              <li><a href="../Art.html">Art Direction</a></li>
+              <li><a href="../design.html">Graphic Design</a></li>
+              <li><a href="../photo.html">Photography</a></li>
+              <li><a href="../about.html">About Me</a></li>
+            </ul>
+        </div>
+      </nav>
+  </header>
+</head>
+<body>
+  <h1>Real Time Designs</h1>
+  <h2>Here you will find all the one-offs I created during my time at Bleacher. One-offs are designs only used once and are requested ahead of time.</h2>
+   <div class="scroll-gallery-wrapper">
+    <button class="scroll-btn left" onclick="scrollGallery(-1)">&#8249;</button>
+    <div class="gallery-container" id="gallery">
+      <img src="../images/flagg.png" alt="Green Garden Branding" class="gallery-item" />
+      <img src="../images/Artboard 2.png" alt="sports branding" class="gallery-item" />
+      <img src="../images/Artboard 3.png" alt="beach club logo" class="gallery-item" />
+      <img src="../images/Artboard 4.png" alt="best dog" class="gallery-item" />
+    </div>
+  <button class="scroll-btn right" onclick="scrollGallery(1)">&#8250;</button>
+</div>
+<div class="item-nav">
+    <a href="../Designs/hoco.html" class="nav-btn-prev">Previous</a>
+    <a href="../design.html" class="nav-btn-back">Back to All</a>        
+    <a href="../Designs/hrl.html" class="nav-btn-next">Next</a>                
+</div>
+    <img src="../images/frog.png" width="250px" class="hidden">
+    <p id="message"></p>
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+</body>
+<script src="../script.js"></script>
+</html>
