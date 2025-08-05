@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://use.typekit.net/hwk7bsw.css">
-    <title>One Off - Gaby's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+    <title>Centennial Celebration - Gaby's Portfolio</title>
     <header>
       <nav class="navbar">
         <div class="navbar-container">
-          <a href="index.html"><img src="../images/logo.svg" aria-label="Homepage logo button" alt="logo" width="80px" class="navbar-logo"></a>
+          <a href="../index.html"><img src="../images/logo.svg" aria-label="Homepage logo button" alt="logo" width="80px" class="navbar-logo"></a>
           <button Aria-label="Navigation Menu" class="navbar-toggle">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -24,25 +25,153 @@
         </div>
       </nav>
   </header>
+  <script>
+function initComparisons() {
+  var x, i;
+  /*find all elements with an "overlay" class:*/
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    /*once for each "overlay" element:
+    pass the "overlay" element as a parameter when executing the compareImages function:*/
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /*get the width and height of the img element*/
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    /*set the width of the img element to 50%:*/
+    img.style.width = (w / 2) + "px";
+    /*create slider:*/
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    /*insert slider*/
+    img.parentElement.insertBefore(slider, img);
+    /*position the slider in the middle:*/
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    /*execute a function when the mouse button is pressed:*/
+    slider.addEventListener("mousedown", slideReady);
+    /*and another function when the mouse button is released:*/
+    window.addEventListener("mouseup", slideFinish);
+    /*or touched (for touch screens:*/
+    slider.addEventListener("touchstart", slideReady);
+    /*and released (for touch screens:*/
+    window.addEventListener("touchend", slideFinish);
+    function slideReady(e) {
+      /*prevent any other actions that may occur when moving over the image:*/
+      e.preventDefault();
+      /*the slider is now clicked and ready to move:*/
+      clicked = 1;
+      /*execute a function when the slider is moved:*/
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /*the slider is no longer clicked:*/
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /*if the slider is no longer clicked, exit this function:*/
+      if (clicked == 0) return false;
+      /*get the cursor's x position:*/
+      pos = getCursorPos(e)
+      /*prevent the slider from being positioned outside the image:*/
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      /*execute a function that will resize the overlay image according to the cursor:*/
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = (e.changedTouches) ? e.changedTouches[0] : e;
+      /*get the x positions of the image:*/
+      a = img.getBoundingClientRect();
+      /*calculate the cursor's x coordinate, relative to the image:*/
+      x = e.pageX - a.left;
+      /*consider any page scrolling:*/
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /*resize the image:*/
+      img.style.width = x + "px";
+      /*position the slider:*/
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+</script>
 </head>
 <body>
-  <h1>One Off Designs</h1>
-  <h2>Here you will find all the one-offs I created during my time at Bleacher. One-offs are designs only used once and are requested ahead of time.</h2>
-   <div class="scroll-gallery-wrapper">
+  <h1>Centennial Celebration</h1>
+  <button onclick="topFunction()" id="myBtnTop" title="Go to top">Top</button>
+  <h2>Tasked with updating the student union- UC- wall for the upcoming Centennial Celebration. The UC wall tells the story of 100 years of the University of Miami, to continue along the theme of the celebration and keeping the university’s unbeatable spirit I designed a wall that captures it all in one. </h2>
+  <h3>This was a big and bold design that lacked storytelling. It was full of spirit but lacking luster, so I wanted to tie in the theme of the wall next to it. My design idea A map to bring it all together and showcase the progression of our campus while maintaining the school spirit. Photo credits: Catherine Mareira </h3>
+  <div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="../Designs/images/IMG_3401.JPG" width="2080" height="990" >
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="../Designs/images/UC+Wall+14.jpg" width="2080" height="990">
+  </div>
+</div>
+<h1>Canes Carnival</h1>
+  <h2>Tasked with coming up with the look and feel for the annual student carnival event, Canes Carnival. This year, it was part of the Centennial Celebration. The event would be open to the community, alumni, students, faculty, and staff. My objective was to create not only the look, but all the marketing, environmental, and merchandise assets. Photo Credits: Catherine Mareira </h2>
+  <div class="scroll-gallery-wrapper-cen">
     <button class="scroll-btn left" onclick="scrollGallery(-1)">&#8249;</button>
-    <div class="gallery-container" id="gallery">
-      <img src="../images/flagg.png" alt="Green Garden Branding" class="gallery-item" />
-      <img src="../images/Artboard 2.png" alt="sports branding" class="gallery-item" />
-      <img src="../images/Artboard 3.png" alt="beach club logo" class="gallery-item" />
-      <img src="../images/Artboard 4.png" alt="best dog" class="gallery-item" />
+    <div class="gallery-container-cen" id="gallery">
+        <div class="gallery-items">
+            <img src="../Designs/images/Centennial+Celebration+36.jpg" alt="canes carnival" class="gallery-item-cen" />
+            <div class="text-block">
+                <h4>Block Party</h4>
+                <p>The theme of the carnival was not only centennial, but also circus. Our campus partner wanted the whimsical feel of the circus with big tents and excitement to be felt through the graphic, while also combining the university’s Centennial branding.</p>
+            </div>
+        </div>
+        <div class="gallery-items">
+            <img src="../Designs/images/HP_CanesCarnival_Event_021225_final_Screen.png" alt="Cam Ward" class="gallery-item-cen" />
+            <div class="text-block">
+                <h4>Event Graphics</h4>
+                <p>The official Centennial branding had the sunburst become a huge part of the celebration, so I decided to incorporate it into the Centennial logo and background. Keeping orange and green subtly throughout, I also added colors that resemble the circus atmosphere.  </p>
+            </div>
+        </div>
+        <div class="gallery-items">
+            <img src="../Designs/images/SASO_Centennial_Digital Map_033125_final_MAP.jpg" alt="Cam Ward" class="gallery-item-cen"/>
+            <div class="text-block">
+                <h4>Map + Directiional Signage</h4>
+                <p>Map and directional signange was placed all over campus to help guide visitors around campus.</p>
+            </div>
+        </div>
+        <div class="gallery-items">
+            <img src="../Designs/images/HP_CanesCarnival_030524_carnival black_no seb_Draft_mockup.png" alt="directional" class="gallery-item-cen"/>
+            <div class="text-block">
+                <h4>Merchandise</h4>
+                <p>Giveaway shirt that was given out to over 8,000 attendees. </p>
+            </div>
+        </div>
     </div>
   <button class="scroll-btn right" onclick="scrollGallery(1)">&#8250;</button>
 </div>
     <img src="../images/frog.png" width="250px" class="hidden">
-    <p id="message"></p>
-    <div class="footer">
-      <p>Footer</p>
+
+     <div class="item-nav">
+        <a href="../Designs/hrl.html" class="nav-btn-prev">Previous</a>
+        <a href="../design.html" class="nav-btn-back">Back to All</a>
+        <a href="../Designs/sports.html" class="nav-btn-next">Next</a>
     </div>
+    
+    <p id="message"></p>
+<div class="footer">
+      <p>Follow me!
+        <a href="https://www.instagram.com/tornaphotography/?hl=en"><img src="../images/ig.svg" width="20px" class="footer-img"><a>
+        <a href="https://www.linkedin.com/in/gaby-torna"><img src="../images/linkedin-app-white-icon.webp" width="20px" class="footer-img"><a></a>
+      </p>
+    </div>
+    <script>
+    initComparisons();
+    </script>
 </body>
 <script src="../script.js"></script>
+<script src="../button.js"></script>
 </html>
