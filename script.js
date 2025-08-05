@@ -1,9 +1,9 @@
 const navbarToggle = document.querySelector('.navbar-toggle');
 const navbarmenu = document.querySelector('.navbar-menu');
 
-navbarToggle.addEventListener('click', () => {
-  navbarToggle.classList.toggle('active');
-  navbarmenu.classList.toggle('active');
+navbarToggle.addEventListener('click', ()=> {
+    navbarToggle.classList.toggle('active');
+    navbarmenu.classList.toggle('active');
 })
 
 filterSelection("all")
@@ -46,7 +46,7 @@ function w3RemoveClass(element, name) {
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
+  btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
@@ -54,15 +54,15 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 function scrollGallery(direction) {
-  const container = document.getElementById('gallery');
-  const scrollAmount = 275;
-  container.scrollBy({
-    left: direction * scrollAmount,
-    behavior: 'smooth'
-  });
-}
+    const container = document.getElementById('gallery');
+    const scrollAmount = 275;
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
 
-function myFunction(imgs) {
+  function myFunction(imgs) {
   // Get the expanded image
   var expandImg = document.getElementById("expandedImg");
   // Get the image text
