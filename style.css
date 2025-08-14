@@ -130,6 +130,8 @@ h1 {
 h2 {
   font-size: 2rem;
   padding: 45px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-bottom: 5px;
   line-height: 50px;
   text-align: center;
@@ -142,6 +144,8 @@ h2 {
 h3 {
   font-size: 1.5rem;
   padding: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
   line-height: 25px;
   text-align: center;
   color: #1c574e;
@@ -173,6 +177,12 @@ h3 {
   padding-bottom: 20px;
   padding-left: 20px;
 
+}
+
+.peta-logo{
+  padding-top: 200px;
+  width: 50%;
+  margin: auto;
 }
 
 .about-container {
@@ -541,23 +551,18 @@ div.scroll-container img {
   padding-left: 150px;
 }
 
-.row-edit {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 100px 4px;
-}
-
 /* Create four equal columns that sits next to each other */
 .row-edit {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 100px 4px;
 }
 
 .column-edit {
   flex: 25%;
   max-width: 23%;
-  padding: 0 4px;
+  padding: 4px 4px 4px 4px;
 }
 
 .column-edit img {
@@ -566,8 +571,24 @@ div.scroll-container img {
   width: 100%;
 }
 
-.edit-container {
-  padding-left: 550px;
+/* disney art */
+.row-may {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px 4px;
+}
+
+.column-may {
+  flex: 25%;
+  max-width: 23%;
+  padding: 4px 580px 4px 4px;
+}
+
+.column-may img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 200%;
 }
 
 /*centennial*/
@@ -868,19 +889,16 @@ html {
   }
 
   .gallery-item {
-    padding-left: 5px;
-    padding-right: 5px;
     height: 400px;
-    width: 240px;
+    width: 450px;
   }
 
   .scroll-gallery-wrapper {
     position: relative;
     display: flex;
-    margin: auto;
     align-items: center;
-    max-width: 2000px;
-    overflow: visible;
+    max-width: 405px;
+    overflow:visible;
   }
 
   .text-block {
@@ -1041,6 +1059,24 @@ html {
   .edit-container {
     padding-left: 25px;
   }
+
+  /* disney art */
+.row-may {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1px;
+}
+
+.column-may {
+  flex: 25%;
+  max-width: 23%;
+  padding: 5px;
+}
+
+.column-may img {
+  width: 420%;
+}
 
   .item-nav {
     padding-top: 200px;
