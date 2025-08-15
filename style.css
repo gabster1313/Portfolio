@@ -747,6 +747,7 @@ html {
 
 }
 
+
 @media (max-width: 600px) {
   .home-key {
     display: flex;
@@ -797,6 +798,8 @@ html {
   h3 {
     line-height: 20px;
     font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
 
@@ -890,7 +893,7 @@ html {
 
   .gallery-item {
     height: 400px;
-    width: 450px;
+    width: 250px;
   }
 
   .scroll-gallery-wrapper {
@@ -975,6 +978,7 @@ html {
     width: auto;
     height: auto;
     overflow: hidden;
+    padding-left: 5px;
     max-width: 380px;
     height: 500px;
   }
@@ -982,8 +986,8 @@ html {
   .img-comp-img img {
     display: block;
     max-height: 500px;
-    max-width: 400px;
-    padding-left: 20px;
+    max-width: 500px;
+    padding-left: 5px;
   }
 
   .img-comp-slider {
