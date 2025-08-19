@@ -16,6 +16,17 @@ body {
   font-style: normal;
 }
 
+.video{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.pdf{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
 .navbar-container {
   display: flex;
   align-items: center;
