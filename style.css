@@ -16,17 +16,23 @@ body {
   font-style: normal;
 }
 
-.video{
+.video {
+  display: flex;
+  flex-direction: column;
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+  width: 60% !important;
+  margin: auto;
+}
+
+.pdf {
   display: flex;
   flex-direction: column;
   margin: auto;
 }
 
-.pdf{
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
 .navbar-container {
   display: flex;
   align-items: center;
@@ -190,7 +196,7 @@ h3 {
 
 }
 
-.peta-logo{
+.peta-logo {
   padding-top: 200px;
   width: 50%;
   margin: auto;
@@ -208,6 +214,10 @@ h3 {
 .motel {
   grid-column: 1/span 2;
   width: 1500px;
+}
+
+.pdf{
+  width:1500px;
 }
 
 .gallery-wall {
@@ -372,7 +382,7 @@ div.scroll-container img {
   padding: 10px;
 }
 
-.scroll-gallery-wrapper{
+.scroll-gallery-wrapper {
   position: relative;
   display: flex;
   margin: auto;
@@ -587,13 +597,14 @@ div.scroll-container img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 100px 4px;
+  padding: 100px;
+  gap: 90px;
 }
 
 .column-may {
   flex: 25%;
   max-width: 23%;
-  padding: 4px 580px 4px 4px;
+  padding: 10px 580px 10px 10px;
 }
 
 .column-may img {
@@ -820,14 +831,14 @@ html {
     overflow: visible;
   }
 
- .design-container{
+  .design-container {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
     overflow: visible;
   }
 
-  .design-icon{
+  .design-icon {
     width: 300px;
     margin: auto;
 
@@ -839,8 +850,8 @@ html {
     line-height: 20px;
     font-size: 0.7rem;
   }
-  
-  .design-button{
+
+  .design-button {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -878,6 +889,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    padding-right: 10px;
   }
 
   .art-cover {
@@ -890,9 +902,9 @@ html {
     margin: auto;
   }
 
-.carnival {
-  padding-top: 450px;
-}
+  .carnival {
+    padding-top: 450px;
+  }
 
   .scroll-btn {
     opacity: 0%;
@@ -912,7 +924,7 @@ html {
     display: flex;
     align-items: center;
     max-width: 405px;
-    overflow:visible;
+    overflow: visible;
   }
 
   .text-block {
@@ -1052,6 +1064,16 @@ html {
     max-width: 93%;
   }
 
+  iframe {
+    width: 60% !important;
+    height: 100%;
+  }
+
+  .pdf{
+    max-width: 402px;
+  }
+
+
   .column-engage img {
     vertical-align: middle;
     width: 100%;
@@ -1076,22 +1098,22 @@ html {
   }
 
   /* disney art */
-.row-may {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 1px;
-}
+  .row-may {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1px;
+  }
 
-.column-may {
-  flex: 25%;
-  max-width: 23%;
-  padding: 5px;
-}
+  .column-may {
+    flex: 25%;
+    max-width: 23%;
+    padding: 5px;
+  }
 
-.column-may img {
-  width: 420%;
-}
+  .column-may img {
+    width: 420%;
+  }
 
   .item-nav {
     padding-top: 200px;

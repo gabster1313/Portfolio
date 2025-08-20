@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+    <link rel="stylesheet" href="https://use.typekit.net/hwk7bsw.css">
+    <title>Undergrad - Gaby's Portfolio</title>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="../index.html"><img src="../images/logo.svg" aria-label="Homepage logo button" alt="logo"
+                        width="80px" class="navbar-logo"></a>
+                <button Aria-label="Navigation Menu" class="navbar-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="navbar-menu">
+                    <li><a href="../art.html">Art Direction</a></li>
+                    <li><a href="../design.html">Graphic Design</a></li>
+                    <li><a href="../photo.html">Photography</a></li>
+                    <li><a href="../about.html">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</head>
+
+<body>
+    <h1>Sports Milestones</h1>
+    <h2>Made just for fun whenever something important happened in the sports world.</h2>
+    <div class="scroll-gallery-wrapper">
+        <button class="scroll-btn left" onclick="scrollGallery(-1)">&#8249;</button>
+        <div class="gallery-container" id="gallery">
+            <div class="gallery-items">
+                <img src="../images/Torna_Magazine_Fiinal (dragged).png" alt="magazine" class="gallery-item">
+                <div class="text-block">
+                    <h4>Magazine Recreation</h4>
+                    <p>In one of my early design classes I was tasked with recreating a magazine. We had to pick one
+                        magazine to copy the layout of, but come up with our own content for it.</p>
+                    <a href="../images/Torna_Magazine_Fiinal.pdf">View Magazine here!</a>
+                </div>
+            </div>
+            <div class="gallery-items">
+                <img src="../Designs/images/WBB Homestand.png" alt="Basketball" class="gallery-item" />
+                <div class="text-block">
+                    <h4>Womens Basketball Internship</h4>
+                    <p>I worked for a year as a designer for the Canes Womens Basketball team where I created various
+                        marketing materials for recruits.</p>
+                    <a href="../Designs/wbb.html">View more here!</a>
+                </div>
+            </div>
+            <div class="gallery-items">
+                <img src="../Designs/images/Horror poster 2 finished.png" alt="The Weeknd" class="gallery-item" />
+                <div class="text-block">
+                    <h4>The Weeknd Tour campaign</h4>
+                    <p>For my advanced graphic design class I was tasked as part of my final to create a campaign that
+                        included merchandise, OOH graphics and other marketing assets. I chose to theme it around The
+                        Weeknds most recent albums. Unbeknowst to me, I chose a horror theme which that same year The
+                        Weeknd unveiled a horror house at Universal's Halloween Horror Nights. </p>
+                    <a href="../Designs/images/Final deck.pdf">View more here!</a>
+                </div>
+            </div>
+            <div class="gallery-items">
+                <img src="../Designs/images/Stationary-01.png" alt="Orange Bowl" class="gallery-item" />
+                <div class="text-block">
+                    <h4>Orange bowl Committee Rebrand</h4>
+                    <p>For my advanced graphic design class I was tasked as part of my final rebrand a non-profit of my choice. We had to create merchandise, a logo and stationary. </p>
+                    <a href="../Designs/images/rebrand.pdf">View more here!</a>
+                </div>
+            </div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollGallery(1)">&#8250;</button>
+    </div>
+    <div class="item-nav">
+        <a href=",,/Designs/hoco.html" class="nav-btn-prev">Previous</a>
+        <a href="../design.html" class="nav-btn-back">Back to All</a>
+        <a href="../Designs/one off.html" class="nav-btn-next">Next</a>
+    </div>
+    <img src="../images/frog.png" width="250px" class="hidden">
+    <p id="message"></p>
+    <div class="footer">
+        <p>Follow me!
+            <a href="https://www.instagram.com/tornaphotography/?hl=en"><img src="../images/ig.svg" width="20px"
+                    class="footer-img"><a>
+                    <a href="https://www.linkedin.com/in/gaby-torna"><img src="../images/linkedin-app-white-icon.webp"
+                            width="20px" class="footer-img"><a></a>
+        </p>
+    </div>
+</body>
+<script src="../script.js"></script>
+
+</html>
