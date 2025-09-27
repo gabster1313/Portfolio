@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
     <link rel="stylesheet" href="https://use.typekit.net/hwk7bsw.css">
-    <title>Homecoming - Gaby's Portfolio</title>
+    <title>Homecoming Concert - Gaby's Portfolio</title>
     <header>
       <nav class="navbar">
         <div class="navbar-container">
-          <a href="../index.html"><img src="../images/logo.svg" width="80px" class="navbar-logo"></a>
-          <button class="navbar-toggle">
+          <a href="../index.html"><img src="../images/logo.svg" aria-label="Homepage logo button" alt="logo" width="80px" class="navbar-logo"></a>
+          <button Aria-label="Navigation Menu" class="navbar-toggle">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -27,16 +27,29 @@
   </header>
 </head>
 <body>
-    <h1>COMING SOON</h1>
-     <div class="footer">
-        <p>Follow me!
-            <a href="https://www.instagram.com/tornaphotography/?hl=en"><img src="../images/ig.svg" width="20px"
-                    class="footer-img"><a>
-                    <a href="https://www.linkedin.com/in/gaby-torna"><img src="../images/linkedin-app-white-icon.webp"
-                            width="20px" class="footer-img"><a></a>
-        </p>
+  <h1>A Boogie Wit Da Hoodie</h1>
+  <h2>Each year Hurricane Productions brings an artist to perform during homecoming week.</h2>
+   <div class="scroll-gallery-wrapper">
+    <button class="scroll-btn left" onclick="scrollGallery(-1)">&#8249;</button>
+    <div class="gallery-container" id="gallery">
+      <img src="../Designs/images/HP_Concerts_save the date_072125_final_IG Post.png" alt="Save the date" class="gallery-item" />
+      <img src="../Designs/images/HP_Concerts_event_072925_final_IG POST.png" alt="Event Graphic" class="gallery-item" />
+    </div>
+  <button class="scroll-btn right" onclick="scrollGallery(1)">&#8250;</button>
+</div>
+<div class="item-nav">
+    <a href="../Designs/centennial.html" class="nav-btn-prev">Previous</a>
+    <a href="../design.html" class="nav-btn-back">Back to All</a>        
+    <a href="../Designs/school.html" class="nav-btn-next">Next</a>                
+</div>
+    <img src="../images/frog.png" width="250px" class="hidden">
+    <p id="message"></p>
+<div class="footer">
+      <p>Follow me!
+        <a href="https://www.instagram.com/tornaphotography/?hl=en"><img src="../images/ig.svg" width="20px" class="footer-img"><a>
+        <a href="https://www.linkedin.com/in/gaby-torna"><img src="../images/linkedin-app-white-icon.webp" width="20px" class="footer-img"><a></a>
+      </p>
     </div>
 </body>
 <script src="../script.js"></script>
-<script src="../button.js"></script>
 </html>
