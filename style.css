@@ -843,7 +843,7 @@ html {
     flex-wrap: wrap;
     justify-content: center;
     overflow: visible;
-    margin-right: 100px;
+    padding-left: 20px;
   }
 
   .design-icon {
