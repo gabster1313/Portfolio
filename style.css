@@ -89,6 +89,11 @@ iframe {
   transition: all 0.3s ease-in-out;
 }
 
+.shirtimg{
+  justify-content: center;
+  margin: 130px;
+}
+
 .navbar-menu {
   padding-top: 90px;
 }
@@ -273,11 +278,12 @@ a {
 }
 
 .design-container {
-  overflow: hidden;
-  display: inline;
+  display:inline;
   margin: auto;
+  overflow:visible;
   padding-top: 10px;
   padding-bottom: 320px;
+  padding-left: 100px;
 }
 
 .footer-img {
@@ -306,6 +312,7 @@ a {
   border-radius: 10px;
   display: block;
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .show {
@@ -836,6 +843,7 @@ html {
     flex-wrap: wrap;
     justify-content: center;
     overflow: visible;
+    margin-right: 100px;
   }
 
   .design-icon {
