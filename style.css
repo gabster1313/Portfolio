@@ -28,8 +28,6 @@ iframe {
 }
 
 .pdf {
-  display: flex;
-  flex-direction: column;
   margin: auto;
 }
 
@@ -423,7 +421,7 @@ div.scroll-container img {
 }
 
 .scroll-btn {
-  position: relative;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
@@ -434,7 +432,7 @@ div.scroll-container img {
   cursor: pointer;
   z-index: 10;
   border-radius: 10%;
-  color: #1c574e;
+  color: #c9b2ea;
 }
 
 .scroll-btn:hover {
@@ -666,9 +664,8 @@ div.scroll-container img {
 
 .scroll-gallery-wrapper-cen {
   position: relative;
-  display: flex;
+  display:flex;
   margin: auto;
-  align-items: center;
   max-width: 2000px;
   overflow: visible;
 }
@@ -1150,7 +1147,7 @@ html {
   }
 }
 
-@media (min-width: 1512px){
+@media (max-width: 1512px){
 .design-container {
     overflow: visible;
     display:block;
@@ -1165,11 +1162,16 @@ html {
 }
 
 .scroll-gallery-wrapper{
-  width: 1512px;
+  width: 1520px;
+  height: 1350px;
+  scale: 70%;
+
 }
 
 .scroll-gallery-wrapper-cen{
-  width: 1512px;
+  width: 1520px;
+  height: 1350px;
+  scale: 70%;
 }
 
 .gallery-container-cen{
@@ -1184,34 +1186,58 @@ html {
   line-height: 40px;
 }
 
+.pdf{
+  width: 1200px;
+}
+
+
 .about-container{
   display: grid;
   margin: auto;
   grid-template-columns: 900px 20px;
   grid-template-rows: 600px 600px;
   gap: 2px;
-  margin-left: -250px;
+  margin-left: -550px;
 }
 .gallery-wall{
     grid-column: 2/span 2;
     font-size: .5rem;
     padding-top: 30px;
-    padding-left: 730px;
-    width: 180px;
+    padding-left: 530px;
+    width: 150px;
 }
 .motel{
-  width: 1250px;
-  padding-left: 200px;
+  width: 1050px;
+  padding-left: 350px;
   grid-column: 1/span 2;
   grid-column: 1/ span 2;
   grid-row: 1 / span 2;
 }
 
 .resume{
-  grid-column: 1/span 1;
-  font-size: 1.5rem;
+  grid-column: 1/span 3;
+  font-size: 1.3rem;
   grid-row: 2/span 1;
-  padding-left: 640px;
-  padding-top: 200px;
+  padding-left: 770px;
+  padding-top: 100px;
 }
+
+.container {
+  position: relative;
+  display: none;
+  width: 900px;
+  margin: auto;
+}
+.row {
+  padding-left: 300px;
+  width: 1000px;
+}
+
+.row .column{
+  padding-left: 40px;
+  padding-right: 170px;
+  width: 20%;
+}
+
+
 }
