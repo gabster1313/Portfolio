@@ -1147,7 +1147,7 @@ html {
   }
 }
 
-@media (max-width: 1512px){
+@media (width: 1512px){
 .design-container {
     overflow: visible;
     display:block;
@@ -1172,6 +1172,11 @@ html {
   width: 1520px;
   height: 1350px;
   scale: 70%;
+}
+
+.scroll-gallery-wrapper-food{
+  width: 1510px;
+  scale: 90%;
 }
 
 .gallery-container-cen{
@@ -1241,3 +1246,4 @@ html {
 
 
 }
+
