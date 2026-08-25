@@ -55,7 +55,7 @@ for (var i = 0; i < btns.length; i++) {
 
 function scrollGallery(direction) {
     const container = document.getElementById('gallery');
-    const scrollAmount = 555;
+    const scrollAmount = 1075;
     container.scrollBy({
       left: direction * scrollAmount,
       behavior: 'smooth'
