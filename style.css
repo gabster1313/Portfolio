@@ -426,13 +426,40 @@ div.scroll-container img {
   transform: translateY(-50%);
   background-color: transparent;
   border: none;
-  font-size: 80px;
-  padding: 5px;
+  font-size: 150px;
+  padding: 15px;
   justify-content: center;
   cursor: pointer;
   z-index: 10;
   border-radius: 10%;
   color: #c9b2ea;
+}
+
+.scroll-btn-hrl {
+  position: relative;
+  scroll-behavior:smooth;
+  top: 10%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 150px;
+  padding: 15px;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+  border-radius: 10%;
+  color: #1c574e;
+}
+.scroll-btn-hrl:hover {
+  color: #fff;
+}
+
+.scroll-btn-hrl.left {
+  left: 5px;
+}
+
+.scroll-btn-hrl.right {
+  right: 5px;
 }
 
 .scroll-btn:hover {
