@@ -429,7 +429,6 @@ div.scroll-container img {
   font-size: 150px;
   padding: 15px;
   justify-content: center;
-  cursor: pointer;
   z-index: 10;
   border-radius: 10%;
   color: #c9b2ea;
@@ -647,21 +646,30 @@ div.scroll-container img {
 /*centennial*/
 .img-comp-container {
   position: relative;
-  height: 900px;
+  height: 1920px;
+  width: 10px;
   /*should be the same height as the images*/
   padding-bottom: 200px;
 }
 
-.img-comp-img {
+.img-comp-overlay {
   position: absolute;
-  width: auto;
-  height: auto;
-  overflow: hidden;
+  top: 0;
+  left: 0;
 }
 
+.img-comp-img {
+  position:absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden
+}
+
+
+
 .img-comp-img img {
-  display: block;
-  padding-left: 300px;
+  display:flex;
+  padding-left: 20px;
 }
 
 .img-comp-slider {
